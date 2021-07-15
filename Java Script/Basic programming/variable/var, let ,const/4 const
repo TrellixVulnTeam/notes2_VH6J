@@ -1,0 +1,8 @@
+const data = 'This is constant'
+
+// not permissibe to change the data
+data = "ddd"
+console.log(data);
+
+
+

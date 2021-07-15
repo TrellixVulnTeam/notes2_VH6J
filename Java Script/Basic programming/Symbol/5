@@ -1,0 +1,12 @@
+
+
+const name = Symbol();
+const person = {
+	[name] : "tohid"
+}
+
+
+console.log(person[name]);
+
+
+

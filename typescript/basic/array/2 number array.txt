@@ -1,0 +1,8 @@
+// only hold  number
+var nums:number[] = [1,2,3];
+
+for(let i of nums){
+    console.log(i);
+}
+
+

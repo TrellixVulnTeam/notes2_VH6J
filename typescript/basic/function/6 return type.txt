@@ -1,0 +1,8 @@
+
+//Return Type Annotations
+function add(): number{
+    return 10;
+}
+
+console.log(add());
+

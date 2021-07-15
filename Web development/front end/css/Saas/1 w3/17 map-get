@@ -1,0 +1,17 @@
+
+
+$font-sizes : (
+	"small" : 10px,
+	"medium" : 30px,
+	"large" : 100px
+	);
+
+
+
+
+
+
+p{
+	color: red;
+	font-size: map-get($font-sizes, "small")
+}

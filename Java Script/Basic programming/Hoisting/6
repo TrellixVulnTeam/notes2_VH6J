@@ -1,0 +1,13 @@
+"use strict"
+
+
+function myFunction(){
+	
+	// cause an error
+	x = 10;
+	console.log(x);
+}
+
+
+myFunction();
+

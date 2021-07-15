@@ -1,0 +1,7 @@
+1. install lite server
+	npm i --save-dev lite-server
+2. initaialize nodejs
+	npm init
+
+3. create a index file and laod app.js file
+

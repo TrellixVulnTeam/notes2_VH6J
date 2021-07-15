@@ -1,0 +1,9 @@
+const x = Symbol('hello');
+console.log(x)
+
+// only access to symbol description
+console.log(x.description)
+
+
+
+

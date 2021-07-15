@@ -1,0 +1,9 @@
+
+// return the primitive value of an array
+
+var arr = [10,30,3,5,6,0,30];
+
+const data = arr.valueOf()
+console.log(data);
+
+

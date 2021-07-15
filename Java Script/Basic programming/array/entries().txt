@@ -1,0 +1,10 @@
+
+//Returns a key/value pair Array Iteration Object
+var ages = ["a", 'b', 'C'];
+
+const data = ages.entries()
+
+for(x of data){
+	console.log(x)
+}
+

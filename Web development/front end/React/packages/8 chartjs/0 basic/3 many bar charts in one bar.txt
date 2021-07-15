@@ -1,0 +1,50 @@
+
+
+import React from  'react';
+import {Bar} from 'react-chartjs-2';
+
+
+function Chart(){
+    return(
+        <>
+
+        <Bar
+            data = {{
+                labels : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                datasets : [{
+                    label : 'Chart map',
+                    data : [100, 200,300, 400,500,200],
+                    backgroundColor : 'red',
+                    barThickness : 12
+                },
+                {
+                    label : 'Chart map',
+                    data : [100, 200,300, 400,500,200],
+                    backgroundColor : 'blue',
+                    barThickness : 12
+                },
+                {
+                    label : 'Chart map',
+                    data : [100, 200,300, 400,500,200],
+                    backgroundColor : 'green',
+                    barThickness : 12
+                }
+            ]
+            }}
+
+           
+                 
+           
+               
+
+        />
+
+    
+
+
+
+        </>
+    )
+}
+
+export default Chart;

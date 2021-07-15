@@ -1,0 +1,42 @@
+
+
+import React from  'react';
+import {PolarArea} from 'react-chartjs-2';
+
+
+function Chart(){
+
+    const data = {
+        labels : ['red', 'blue', 'yellow', 'green', 'purple', 'orange'],
+        datasets : [
+            {
+                label : 'red votes',
+                data : [12,19,3,5,2,3],
+                backgroundColor : ['red', 'blue', 'yellow', 'green', 'purple', 'orange'],
+                borderColor : 'black'
+            }
+        ],
+        borderWith : 0,
+
+    } 
+
+
+    return(
+        <>
+            <PolarArea
+
+                data = {data}
+
+            />
+
+
+        </>
+        )
+
+      
+
+    
+}
+
+
+export default Chart;

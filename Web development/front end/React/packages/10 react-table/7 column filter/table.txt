@@ -1,0 +1,131 @@
+
+import React, { useMemo } from 'react'
+import  {useTable, useGlobalFilter, useFilters} from 'react-table';
+import DATA from '../data.json';
+
+import GlobalFilter from './globalFilter';
+import ColumnFilter from './columFilter';
+
+const COLUMNS = [
+	{
+		Header: "id",
+		accessor : "id",
+		Footer : "id",
+		Filter : ColumnFilter
+	},
+	{
+		Header : "First Name",
+		accessor : "first_name",
+		Footer : "First Name",
+		Filter : ColumnFilter
+	},
+	{
+		Header : "Last Name",
+		accessor : "last_name",
+		Footer : "Last Name",
+		Filter : ColumnFilter
+	},
+	{
+		Header : "Date of Birth",
+		accessor : "date_of_birth",
+		Footer : "Date of Birth",
+		Filter : ColumnFilter
+		
+	},
+	{
+		Header : "Country",
+		accessor : "country",
+		Footer : "Country",
+		Filter : ColumnFilter
+	},
+	{
+		Header : "Phone",
+		accessor : "phone",
+		Footer : "Phone",
+		Filter : ColumnFilter
+	}
+]
+
+
+
+
+
+function Table(){
+
+
+	const columns = useMemo(()=> COLUMNS, []);
+	const data = useMemo(()=> DATA, []);
+
+	const tableInstance = useTable({
+		columns,
+		data
+	},useGlobalFilter, useFilters )
+    
+
+	const  {
+		getTableProps,
+		getTableBodyProps,
+		headerGroups,
+		rows,
+		prepareRow,
+		state,
+		setGlobalFilter
+	} = tableInstance;
+
+   
+	const {globalFilter} = state;
+
+
+	return(
+		<>
+
+				<GlobalFilter filter = {globalFilter} setFilter = {setGlobalFilter} />
+		      <table className = "table table-striped table-bordered " {...getTableProps()}>
+				  <thead className = "bg-primary" >
+					  {
+						  headerGroups.map(headerGroup =>(
+							  <tr {...headerGroup.getHeaderGroupProps()}>
+								  {
+									  headerGroup.headers.map(column=> (
+										  <th {...column.getHeaderProps()}>
+											  {column.render('Header')}
+											  
+											  <div> {column.canFilter ? column.render('Filter'):null} </div>
+											 
+										  </th>
+									  ))
+								  }
+
+							  </tr>
+						  ))
+					  }
+				  </thead>
+				  <tbody {...getTableBodyProps()}>
+					  {
+						  rows.map(row=> {
+							  prepareRow(row)
+							  return(
+								  <tr{...row.getRowProps()}>
+									{row.cells.map(cell => {
+										return(
+											<td {...cell.getCellProps()}>
+												{cell.render('Cell')}
+											</td>
+										)
+									})}
+								  </tr>	
+							  )
+						  })
+					  }
+					
+
+
+				  </tbody>
+
+			  </table>
+
+		</>
+
+	)
+}
+export default Table;

@@ -1,0 +1,5 @@
+const x = Symbol();
+
+// type of symbol
+console.log(typeof x);
+

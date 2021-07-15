@@ -1,0 +1,15 @@
+
+
+function myFunction(){
+	
+	// local scope 
+	var data = 10;
+
+}
+
+myFunction();
+
+console.log(data);
+
+
+

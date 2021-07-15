@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+  </head>
+  <body>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script>
+
+    	// initialize socket
+      var socket = io();
+
+    // emit and event
+    socket.emit('clientEvent', "send an event from the client");
+
+
+     
+    </script>
+  </body>
+</html>

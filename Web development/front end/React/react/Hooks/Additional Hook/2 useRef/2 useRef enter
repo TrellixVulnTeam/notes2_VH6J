@@ -1,0 +1,50 @@
+import React, {useRef, useEffect} from 'react';
+
+
+
+function Register(){
+
+ const firstNameRef = useRef(null);
+ const lastNameRef = useRef(null);
+ const submitRef = useRef(null);
+ 
+
+ useEffect(()=> {
+   firstNameRef.current.focus();
+
+ },[])
+
+ function firstkeyDown(e){
+    if(e.key == "Enter") {
+        lastNameRef.current.focus();
+    }
+ }
+
+
+ function lastKeyDown(e){
+    if(e.key == 'Enter'){
+        submitRef.current.focus();
+    }
+ }
+
+	return(
+		<>
+
+           <form>
+
+           <input onkeyDown = {firstkeyDown} type = 'text' placeholder = "Enter firstname" ref = {firstNameRef} />
+           <input onkeyDown = {lastKeyDown}  type = "text" placeholder = "Enter lastname"  ref = {lastNameRef} />
+
+
+           <button  ref = {submitRef} > submit </button>
+
+           </form>
+
+	  
+		</>
+		)
+}
+
+export default Register;
+
+

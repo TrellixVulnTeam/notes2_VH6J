@@ -1,0 +1,26 @@
+// global declaretion 
+// accessible to anywhere
+var data = 5;
+let data1 = 10;
+const data2 = 20;
+
+
+
+
+function myFunction(){
+	// data is changeable here 
+	data = 0;
+    
+    // data is changeable here 
+	data1 = 0;
+
+	// not changeable 
+	//data2 = 10;
+
+	return data1 + data2 +data;
+}
+
+console.log(myFunction())
+
+
+

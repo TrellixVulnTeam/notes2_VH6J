@@ -1,0 +1,13 @@
+// global declaretion 
+// accessible to anywhere
+let data = 5;
+var data1 = 10;
+var data2 = 20;
+
+
+
+function myFunction(){
+	return data1 + data2 +data;
+}
+
+console.log(myFunction())

@@ -1,0 +1,8 @@
+
+// default parameters
+function add(a : number, b:number = 3){
+    return a+b
+}
+
+const data =  add(10);
+console.log(data);

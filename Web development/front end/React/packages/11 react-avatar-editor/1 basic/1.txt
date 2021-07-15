@@ -1,0 +1,29 @@
+import React, {useState} from 'react'
+import AvatarEditor from 'react-avatar-editor'
+
+function App() {
+
+	const [range, setRange] = useState(0);
+	const [scale, setScale] = useState(1.2);
+	
+
+    return (
+	<>
+      <AvatarEditor
+        image="https://image.shutterstock.com/image-photo/dark-data-center-male-specialist-600w-1363031138.jpg"
+        width={250}
+        height={250}
+        border={50}
+        color={[255, 255, 255, 0.6]} // RGBA
+        scale={scale}
+        rotate={range}
+      />
+
+	  <input type = "range"  onChange = {(e)=> setRange(e.target.value)} min = "0" max = "360" />
+	  <input type = "range"  onChange = {(e)=> setScale(e.target.value)}  min = "1.5" max = "30" />
+
+	</>
+    )
+}
+
+export default App;

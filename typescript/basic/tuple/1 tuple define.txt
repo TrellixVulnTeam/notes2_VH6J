@@ -1,0 +1,5 @@
+
+var tuple = [10, 'sdfldfdf', 20];
+console.log(tuple);
+
+

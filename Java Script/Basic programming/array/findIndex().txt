@@ -1,0 +1,12 @@
+//Returns the index of the first element in an array that pass a test
+
+
+var ages = [3, 10, 18, 20];
+function checkAdult(age) {
+  return age >= 18;
+}
+
+
+ const data = ages.findIndex(checkAdult);
+ console.log(data);
+</script>

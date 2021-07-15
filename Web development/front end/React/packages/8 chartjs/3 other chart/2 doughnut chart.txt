@@ -1,0 +1,42 @@
+
+
+import React from  'react';
+import {Doughnut} from 'react-chartjs-2';
+
+
+function Chart(){
+
+    const data = {
+        labels : ['1', '2','3','4'],
+        datasets : [
+            {
+                label : 'red votes',
+                data : [20,30,50,20],
+                backgroundColor : ['red', 'green', 'blue', 'orange'],
+                borderColor : 'black'
+            }
+        ],
+        borderWith : 0,
+
+    } 
+
+
+    return(
+        <>
+            <Doughnut
+
+                data = {data}
+
+            />
+
+
+        </>
+        )
+
+      
+
+    
+}
+
+
+export default Chart;

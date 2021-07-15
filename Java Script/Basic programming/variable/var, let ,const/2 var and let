@@ -1,0 +1,30 @@
+<script type="text/javascript">
+
+
+
+if(true){
+
+	// permissible 
+	var data1 = "this is var"
+	var data1 = "this is var again..."
+}
+
+// var functional scope 
+// var working out of box scope 
+console.log(data1)
+
+
+
+if(true){
+
+	// not permissible 
+	let data2 = "this is let"
+	let data2 = "this is let again..."
+}
+
+
+
+
+
+
+</script>

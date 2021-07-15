@@ -1,0 +1,41 @@
+
+
+var numbers  = [100, 20,20,10];
+
+
+function myFunction(total, num){
+	return total - num;
+}
+
+
+const data = numbers.reduce(myFunction)
+console.log(data);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

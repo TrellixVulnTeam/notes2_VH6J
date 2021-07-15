@@ -1,0 +1,19 @@
+
+// union type array
+var arr:number[]|string[];
+arr = [12,3,45];
+console.log("numeric array");
+
+for(let i = 0; i < arr.length; i++){
+    console.log(arr[i])
+};
+
+
+arr = ['Dhaka', 'Mombai', "kolkata"];
+console.log("string array");
+
+for(let i = 0; i < arr.length; i++){
+    console.log(arr[i])
+}
+
+

@@ -1,0 +1,45 @@
+const Sequelize = require('sequelize')
+//import database model
+const userModel = require('./models/user');
+
+// establish connection
+const connection =  new Sequelize('DB', 'root', '', {
+  host: 'localhost',
+  dialect: 'mysql',
+});
+
+
+
+
+// closing connection
+
+try{
+	connection.authenticate();
+	console.log("DB connected")
+}catch(e){   
+
+	console.log("DB connection failed")
+}
+
+
+const sequelize =  userModel(connection, Sequelize);
+
+
+connection.sync()
+	.then(()=> {
+		console.log("user table is created")
+	})
+
+
+
+
+
+
+
+
+module.exports = sequelize;
+
+
+
+
+

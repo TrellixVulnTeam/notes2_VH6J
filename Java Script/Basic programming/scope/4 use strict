@@ -1,0 +1,13 @@
+// "use strict"
+
+
+
+function myFunction(){
+	
+	data = 10;
+	console.log(data)
+}
+
+myFunction();
+
+

@@ -1,0 +1,18 @@
+function fibo(n, preValue = []){
+  
+  if(preValue[n] != null){
+    return preValue[n]
+  }
+
+  let result = 0; 
+  if(n <=2){
+    result = 1;
+  }else{
+    result = fibo(n-1,preValue) + fibo(n-2,preValue)
+  }
+
+  preValue[n] = result
+  return result;
+}
+
+console.log(fibo(51))

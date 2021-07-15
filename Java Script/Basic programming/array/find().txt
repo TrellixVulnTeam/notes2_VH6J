@@ -1,0 +1,11 @@
+//Returns the value of the first element in an array that pass a test
+
+
+var ages = [3, 10, 20, 18];
+function checkAdult(age) {
+  return age >= 18;
+}
+
+
+ const data = ages.find(checkAdult);
+ console.log(data);

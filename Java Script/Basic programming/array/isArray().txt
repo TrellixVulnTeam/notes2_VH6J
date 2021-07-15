@@ -1,0 +1,2 @@
+const arr = [10,304,40];
+console.log(Array.isArray(arr));

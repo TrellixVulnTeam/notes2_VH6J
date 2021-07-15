@@ -1,0 +1,7 @@
+
+
+ install packages name 
+    1. install mysql2
+    	npm i mysql2
+    2. install sequelize
+    	npm install --save sequelize

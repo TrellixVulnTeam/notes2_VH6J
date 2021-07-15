@@ -1,0 +1,20 @@
+<script type="text/javascript">
+	
+
+
+function person (first, last){
+	this.firstName = first;
+	this.lastName = last;
+}
+
+
+// adding new property 
+person.prototype.language = "English"
+
+
+var grandf = new person('Jhon', "kalin")
+
+console.log(grandf.language)
+
+
+</script>

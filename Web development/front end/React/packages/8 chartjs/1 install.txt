@@ -1,0 +1,2 @@
+install
+react-chartjs-2 chartjs

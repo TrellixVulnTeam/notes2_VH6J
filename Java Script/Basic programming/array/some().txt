@@ -1,0 +1,26 @@
+<script type="text/javascript">
+
+
+
+//Checks if any of the elements in an array pass a test
+
+// return true or false
+
+var ages = [3, 10, 18, 20];
+
+function checkAdult(age) {
+  return age >= 18;
+}
+
+const data =  ages.some(checkAdult);
+console.log(data);
+
+
+
+
+
+
+
+
+
+</script>

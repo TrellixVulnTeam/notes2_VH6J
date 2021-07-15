@@ -1,0 +1,25 @@
+
+class Car{
+    //field
+    engine:string;
+
+    // constructor
+    constructor(engine:string){
+        this.engine = engine;
+    }
+
+    // function
+    disp():void{
+        console.log("engine is :" +this.engine)
+    }
+}
+
+
+
+// instantiating a class
+var obj = new Car('Engine 1');
+
+
+// accessing an attribute and function
+obj.field_name
+obj.function_name

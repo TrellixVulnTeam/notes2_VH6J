@@ -1,0 +1,32 @@
+<script type="text/javascript">
+  
+
+const prevValue = []
+function square(n){
+  
+
+  if(prevValue[n] != null){
+    return prevValue[n]
+  }
+
+
+   let result = 0;
+  for(let i = 1; i<=n; i++){
+    for(let j=1; j<=n; j++){
+      result = result + 1
+    }
+  }
+  prevValue[n]= result;
+  return result;
+}
+
+// taking time 
+console.log(square(15000))
+console.log(square(15000))
+console.log(square(15000))
+console.log(square(15000))
+console.log(square(15000))
+
+
+
+</script>

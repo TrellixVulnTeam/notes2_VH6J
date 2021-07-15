@@ -1,0 +1,29 @@
+const mysql = require('mysql');
+
+
+
+ const conn = mysql.createConnection({
+	host : "localhost",
+	user : "root",
+	password : "",
+	database : "DB"
+  })
+
+
+
+conn.connect(function(err){
+	if(err)
+		console.log('err');
+	else{
+		console.log("DB connected")
+	
+		var sql = "CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))";
+		conn.query(sql, function(err, result){
+			if(err) throw err;
+			console.log("table created")
+		})
+	}
+
+})
+
+

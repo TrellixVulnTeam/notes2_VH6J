@@ -1,0 +1,21 @@
+
+
+ 1. Install typescript
+	sudo npm install -g typescript
+ 
+ 
+2.clear npm cache  
+ 	npm cache clean --force
+ 	
+3. cheack version
+	tsc --version
+	
+4. run ts file
+	tsc app.ts
+	
+5. watch change 
+	tsc app.ts -w
+
+
+
+

@@ -1,0 +1,9 @@
+
+// union type variable
+var val:string|number;
+val =10;
+val = "hello"
+
+//val = true; not work
+
+

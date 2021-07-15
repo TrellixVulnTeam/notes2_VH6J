@@ -1,0 +1,17 @@
+
+const person = {
+	name : "Tohid",
+	age  : 12
+}
+
+
+// permissible to change the value : pair
+person.name = "Akram"
+
+
+// not permissible 
+const person;
+
+
+console.log(person)
+

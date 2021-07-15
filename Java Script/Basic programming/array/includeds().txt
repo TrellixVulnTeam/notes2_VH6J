@@ -1,0 +1,11 @@
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// check wheater have or not
+var d = fruits.includes('Mango');
+console.log(d);
+
+
+// starting search from index 2
+var n = fruits.includes("Orange",2);
+console.log(n);
+

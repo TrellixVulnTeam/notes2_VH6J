@@ -1,0 +1,29 @@
+const Sequelize = require('sequelize')
+
+
+// establish connection
+const sequelize =  new Sequelize('DB', 'root', '', {
+  host: 'localhost',
+  dialect: 'mysql',
+});
+
+
+
+
+// testing connection
+
+try {
+  sequelize.authenticate();
+  console.log('Connection has been established successfully.');
+} catch (error) {
+  console.error('Unable to connect to the database:', error);
+}
+
+
+
+module.exports = sequelize;
+
+
+
+
+

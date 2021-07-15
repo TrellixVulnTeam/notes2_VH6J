@@ -1,0 +1,7 @@
+	const data = "ddd";
+
+
+     if(isNaN(data))
+     	console.log("not number");
+     else
+     	console.log("number ")

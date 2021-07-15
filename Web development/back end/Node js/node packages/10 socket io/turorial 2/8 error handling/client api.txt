@@ -1,0 +1,17 @@
+Connect - When the client successfully connects.
+
+Connecting - When the client is in the process of connecting.
+
+Disconnect - When the client is disconnected.
+
+Connect_failed - When the connection to the server fails.
+
+Error - An error event is sent from the server.
+
+Message - When the server sends a message using the send function.
+
+Reconnect - When reconnection to the server is successful.
+
+Reconnecting - When the client is in the process of connecting.
+
+Reconnect_failed - When the reconnection attempt fails.

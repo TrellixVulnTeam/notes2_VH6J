@@ -1,0 +1,3 @@
+var myArr = Array.from("ABCDEFG");
+
+console.log(myArr);

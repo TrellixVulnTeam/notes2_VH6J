@@ -1,0 +1,8 @@
+// array destructor
+
+var arr= [10,30];
+var[x,y] = arr;
+console.log(x);
+console.log(y);
+
+

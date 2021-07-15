@@ -1,0 +1,7 @@
+	const data = 10;
+
+
+	if(typeof data == 'number')
+		console.log("number")
+	else
+		console.log("not")

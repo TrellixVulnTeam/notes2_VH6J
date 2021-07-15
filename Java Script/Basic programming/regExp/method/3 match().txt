@@ -1,0 +1,5 @@
+var data = "w3school";
+var pattern = /3/g;
+var data = data.match(pattern);
+console.log(data);
+

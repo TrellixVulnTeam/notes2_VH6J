@@ -1,0 +1,5 @@
+
+ // declaration is hosted to top
+ x = 3;
+ console.log(x);
+

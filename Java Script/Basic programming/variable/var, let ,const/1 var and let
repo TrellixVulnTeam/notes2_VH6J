@@ -1,0 +1,18 @@
+if(true){
+	var data1 = "this is var"
+}
+
+// var functional scope 
+// var working out of box scope 
+console.log(data1)
+
+
+
+if(true){
+	let data2 = "this is let"
+}
+
+
+// not work out of block scope
+// let is block scope 
+console.log(data2)

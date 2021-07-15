@@ -1,0 +1,83 @@
+
+
+import React from  'react';
+import {Scatter} from 'react-chartjs-2';
+
+
+const rand = ()=> Math.round(Math.random() *20 -10)
+
+function Chart(){
+
+
+    const data = {
+      labels : "Scatter chart",
+      datasets : [
+        {
+      data : [
+        { x : rand(), y : rand()},
+        { x : rand(), y : rand()},
+        { x : rand(), y : rand()},
+        { x : rand(), y : rand()},
+        { x : rand(), y : rand()},
+        { x : rand(), y : rand()},
+        { x : rand(), y : rand()},
+        { x : rand(), y : rand()},
+        { x : rand(), y : rand()},
+        { x : rand(), y : rand()},
+
+
+      ],
+      backgroundColor : 'red'
+      }
+      ]
+
+    }
+      
+
+   const options = {
+     scales : {
+        yAxes : [
+            {
+                type : 'linear',
+                display : true,
+                position : 'left',
+                id : 'y-axis-1'
+            },
+            {
+                type: "linear",
+                display : true,
+                position : 'right',
+                id : 'y-axis-2',
+                gridLines : {
+                    drawOnArea : false
+                }
+
+            }
+
+        ]
+     }
+   }
+
+        
+
+
+    return(
+        <>
+
+           <Scatter
+
+                data = {data} 
+                
+                
+
+            />
+
+      
+
+
+
+        </>
+    )
+}
+
+export default Chart;

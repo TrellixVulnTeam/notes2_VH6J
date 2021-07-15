@@ -1,0 +1,79 @@
+
+
+import React, {useState, useEffect} from  'react';
+import {Bar} from 'react-chartjs-2';
+
+
+const rand = () => Math.round(Math.random() * 255);
+
+
+const genData = () => ({
+    labels : ['Jan','Feb', 'Mar', 'Apr', 'May', 'Jun'],
+    datasets : [
+        {
+            type : 'line',
+            label : "Dataset 1",
+            borderColor : `rgb(${rand()},${rand()},${rand()} )`,
+            borderWidth : 2,
+            fill : false,
+            data : [rand(), rand(), rand(), rand(), rand(), rand()],
+  
+        },
+        {
+            type : "bar",
+            label : 'Dataset 2',
+            backgroundColor : `rgb(${rand()},${rand()},${rand()} )`,
+            data : [rand(), rand(), rand(), rand(), rand(), rand()],
+            borderWidth : 2
+        },
+        {
+            type : "bar",
+            label : "Dataset 3",
+            backgroundColor : `rgb(${rand()},${rand()},${rand()} )`,
+            data : [rand(), rand(), rand(), rand(), rand(),rand()]
+        }
+    ]
+
+})
+
+const options = {
+    scales : {
+        yAxes : [
+        {
+            ticks : {
+                beginAtZero : true
+            }
+        }
+        ]
+    }
+}
+
+const Crazy = ()=> {
+
+    const [data, setData] = useState(genData())
+
+    useEffect(()=> {
+        const interval = setInterval(()=> setData(genData()), 3000);
+        return()=> clearInterval(interval);
+    },[])
+
+    return(
+        <>
+
+            <Bar
+                data = {data}
+                options = {options}
+              
+
+
+             />
+
+
+
+        </>
+        )
+}
+
+
+
+export default Crazy;

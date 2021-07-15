@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+  </head>
+  <body>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script>
+
+    
+      var socket = io('/my-namespace');
+      socket.on('hi', (data)=> {
+      	document.write(data);
+      })
+
+     
+    </script>
+  </body>
+</html>

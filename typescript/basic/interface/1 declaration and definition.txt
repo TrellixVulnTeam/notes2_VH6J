@@ -1,0 +1,21 @@
+
+// interface declaration and definition
+interface Person{
+    firstname:string,
+    lastname :string,
+    age : number
+}
+
+var customer:Person ={
+    firstname : "Tohid",
+    lastname : "ahmed",
+    age : 10
+}
+
+console.log(customer.firstname);
+
+
+
+
+
+
