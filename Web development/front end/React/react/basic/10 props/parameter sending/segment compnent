@@ -1,0 +1,26 @@
+import React from 'react';
+
+
+function Segment(props){
+  return(
+    <div className = "jumbotron">
+      {props.children}
+    </div>
+  )
+}
+
+
+function App(){
+
+  return(
+    <>
+       <Segment>
+            Hello world
+       </Segment>
+      
+    </>
+
+  )
+}
+
+export default App;
