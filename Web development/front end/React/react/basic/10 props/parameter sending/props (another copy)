@@ -1,0 +1,31 @@
+import React from 'react';
+import Dashboard from './components/dashboard'
+
+function App(){
+
+  return(
+    <>
+      <Dashboard name = "Ahad" age = "20" />
+
+    </>
+
+  )
+}
+export default App;
+
+
+
+
+
+
+import React from 'react';
+function Dashboard(props){
+
+    return(
+        <>
+           <h3> commented by</h3>
+           {props.name}
+        </>
+    )
+}
+export default Dashboard;
